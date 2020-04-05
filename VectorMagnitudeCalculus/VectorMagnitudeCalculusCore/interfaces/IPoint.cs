@@ -6,6 +6,6 @@ namespace VectorMagnitudeCalculusCore.interfaces
 {
     public interface IPoint
     {
-        double CalculateMagnitude();
+        double CalculateMagnitudeFromOrigin();
     }
 }

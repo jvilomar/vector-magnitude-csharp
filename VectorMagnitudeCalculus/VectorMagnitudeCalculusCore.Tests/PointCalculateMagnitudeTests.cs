@@ -11,14 +11,14 @@ namespace VectorMagnitudeCalculusCore.Tests
     public class PointCalculateMagnitudeTests
     {
         [Fact]
-        public void CalculateMagnitudeShouldCalculate()
+        public void Calculate_Magnitude_From_Origin_Should_Calculate()
         {
             //Arrange
             IPoint vector = new Point() { X = 3, Y = 5 };
             double expected = 5.83;
 
             //Act
-            double actual = vector.CalculateMagnitude();
+            double actual = vector.CalculateMagnitudeFromOrigin();
 
             //Assert
             Assert.Equal(expected, actual);

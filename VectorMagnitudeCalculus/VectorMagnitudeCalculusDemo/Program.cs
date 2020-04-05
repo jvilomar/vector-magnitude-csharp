@@ -9,7 +9,7 @@ namespace VectorMagnitudeCalculusDemo
         {
 
             var point = new Point() { X = 3, Y = 5};
-            var result = point.CalculateMagnitude();
+            var result = point.CalculateMagnitudeFromOrigin();
 
             Console.WriteLine($"The vector magnitude of the Point ({point.X} , {point.Y}) is {result}");
       

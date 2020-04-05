@@ -18,9 +18,18 @@ namespace VectorMagnitudeCalculusCore
         ///   CalculateMagnitude return the Magnitude of a Vector from it's Origin point.
         /// </summary>
         /// <returns> double </returns>
-        public double CalculateMagnitude()
+        public double CalculateMagnitudeFromOrigin()
         {
-            return Math.Round(Math.Sqrt((Math.Pow(X, 2) + Math.Pow(Y, 2))),2);
+            return Math.Round(Math.Sqrt((Doubled(X) + Doubled(Y))), 2);
+        }
+
+        /// <summary>
+        /// Used to doubled the given axis.  
+        /// </summary>
+        /// <param name="axis"> The coordinate part to double X.coordinate or Y.coordinate</param>
+        /// <returns></returns>
+        private double Doubled(double axis) {
+            return axis * axis;
         }
 
     }
